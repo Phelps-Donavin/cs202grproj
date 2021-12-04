@@ -13,16 +13,13 @@
             if(getBitDepth()==8){
                 eightBitBuffer = new unsigned char[waveHeader.data_bytes];
                 file.read((char*)eightBitBuffer, waveHeader.data_bytes); 
-                //std::cout<<"8 bit"<<std::endl;
             } else {
                 sixteenBitBuffer = new short[waveHeader.data_bytes];
-                file.read((char*)sixteenBitBuffer, waveHeader.data_bytes); 
-                //std::cout<<"16 bit"<<std::endl;
+                file.read((char*)sixteenBitBuffer, waveHeader.data_bytes);
             } 
         }
         file.close(); 
         displayMetaData(fileName);
-            //Do something if file is closed!
         } 
 
   
@@ -95,4 +92,14 @@
     }
     int Wav::getNumSamples(){
         return(waveHeader.data_bytes/waveHeader.sample_alignment);
+    }
+
+    Wav::~Wav(){
+        if(waveHeader.data_bytes==8){
+            delete[] eightBitBuffer;
+        }
+        if(waveHeader.data_bytes==16){
+            delete[] sixteenBitBuffer;
+        }
+        
     }

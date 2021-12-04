@@ -6,7 +6,6 @@
 #include "wavHeader.h"
 #include <fstream>
 #include <iostream>
-#include <stdio.h>
 #include <vector>
 class Wav{
     wav_header waveHeader;
@@ -24,5 +23,6 @@ public:
     int getBitDepth();
     int getDataBytes();
     int getNumSamples();
+    ~Wav();
 };
 #endif
