@@ -67,7 +67,6 @@ int main(){
                     }
                         break;
             }
-             std::cout<<"Success!"<<std::endl;
         }
         std::system("clear");
     }while(menu.getRunFlag()==1);
