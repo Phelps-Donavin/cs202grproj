@@ -1,5 +1,5 @@
-audio: driver.o wav.o normalization.o gain.o echo.o UI.o
-	g++ driver.o wav.o normalization.o gain.o echo.o UI.o -o audio
+audio_processor: driver.o wav.o normalization.o gain.o echo.o UI.o
+	g++ driver.o wav.o normalization.o gain.o echo.o UI.o -o audio_processor
 driver.o: driver.cpp
 	g++ driver.cpp -c
 wav.o: wav.cpp
@@ -13,4 +13,4 @@ echo.o: echo.cpp
 UI.o: UI.cpp
 	g++ UI.cpp -c
 make clean:
-	rm *.o output.wav
+	rm *.o audio_processor

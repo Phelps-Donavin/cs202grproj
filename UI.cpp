@@ -20,11 +20,8 @@ void UI::startMenu(){
 
 		
     
-    if(runFlag!=1){
-        if(runFlag!=0){
+    if(runFlag!=1 && runFlag !=0){
             std::cout<<"Please enter a valid menu option."<<std::endl;
-            std::system("clear");
-        }
     }
 } //prints the start menu
 
