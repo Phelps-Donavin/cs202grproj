@@ -21,12 +21,12 @@ int main(){
                     if(sound.getBitDepth()==16){
                      Normalization process(sound.getSixteenBitBitBuffer(), sound.getBitDepth(), sound.getDataBytes());
                      process.process();
-                     sound.save(process.getData());
+                     sound.save(process.getData(), menu.getOutputFilename());
                     }
                     if(sound.getBitDepth()==8){
                         Normalization process(sound.getEightBitBuffer(), sound.getBitDepth(), sound.getDataBytes());
                         process.process();
-                        sound.save(process.getData());
+                        sound.save(process.getData(), menu.getOutputFilename());
                     }
                         break;
                  case 2:
@@ -37,12 +37,12 @@ int main(){
                     if(sound.getBitDepth()==16){
                         Gain process(sound.getSixteenBitBitBuffer(), sound.getBitDepth(), sound.getDataBytes());
                         process.process(level);
-                        sound.save(process.getData());
+                        sound.save(process.getData(),menu.getOutputFilename());
                     }
                     if(sound.getBitDepth()==8){
                         Gain process(sound.getEightBitBuffer(), sound.getBitDepth(), sound.getDataBytes());
                         process.process(level);
-                        sound.save(process.getData());
+                        sound.save(process.getData(), menu.getOutputFilename());
                         std::cout<<"in 8bit path 2"<<std::endl;
         
                     }
@@ -58,12 +58,12 @@ int main(){
                     if(sound.getBitDepth()==16){
                         Echo process(sound.getSixteenBitBitBuffer(), sound.getBitDepth(), sound.getDataBytes());
                         process.process(delay, gainlevel);
-                        sound.save(process.getData());
+                        sound.save(process.getData(), menu.getOutputFilename());
                     }
                     if(sound.getBitDepth()==8){
                         Echo process(sound.getEightBitBuffer(), sound.getBitDepth(), sound.getDataBytes());
                         process.process(delay, gainlevel);
-                        sound.save(process.getData());
+                        sound.save(process.getData(), menu.getOutputFilename());
                     }
                         break;
             }

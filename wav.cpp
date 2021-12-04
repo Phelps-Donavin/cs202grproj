@@ -1,3 +1,4 @@
+
 #include"Wav.h"
 
    
@@ -23,7 +24,7 @@
         } 
 
   
-    void Wav::save(std::vector<float> data){
+    void Wav::save(std::vector<float> data, std::string Filename){
         if(waveHeader.bit_depth==16){
         short* writeBuffer;
         writeBuffer= new short[data.size()];
@@ -32,7 +33,7 @@
         }
         waveHeader.data_bytes=data.size();
         waveHeader.wav_size=36+waveHeader.data_bytes;
-         std::ofstream file("output.wav",std::ios::binary | std::ios::out); 
+         std::ofstream file(Filename,std::ios::binary | std::ios::out); 
          file.write((char*)&waveHeader, sizeof(wav_header));
          file.write((char*)writeBuffer, waveHeader.data_bytes); 
          file.close(); 
@@ -46,7 +47,7 @@
             }
             waveHeader.data_bytes=data.size();
             waveHeader.wav_size=36+waveHeader.data_bytes;
-            std::ofstream file("output.wav",std::ios::binary | std::ios::out); 
+            std::ofstream file(Filename,std::ios::binary | std::ios::out); 
             file.write((char*)&waveHeader, sizeof(wav_header));
             file.write((char*)writeBuffer, waveHeader.data_bytes); 
             file.close(); 

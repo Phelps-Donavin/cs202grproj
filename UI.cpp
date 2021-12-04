@@ -10,10 +10,15 @@ void UI::startMenu(){
     std::cin>>runFlag;
     std::system("clear");
     if(runFlag==1){
-        std::cout<<"Please input FileName: ";
+        std::cout<<"Please input File Name: ";
         std::cin>>fileName;
         std::system("clear");
+				std::cout<<"Please input output File Name: ";
+				std::cin>>outputFileName;
+				std::system("clear");
     }
+
+		
     
     if(runFlag!=1){
         if(runFlag!=0){

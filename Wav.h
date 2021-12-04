@@ -15,7 +15,7 @@ public:
     Wav()=default;
     Wav(std::string filename);
     void read(const std::string fileName);
-    void save(std::vector<float> data);
+    void save(std::vector<float> data, std::string Filename);
     void displayMetaData(std::string filename);
     unsigned char* getEightBitBuffer() const;
     short* getSixteenBitBitBuffer() const;

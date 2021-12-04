@@ -13,4 +13,4 @@ echo.o: echo.cpp
 UI.o: UI.cpp
 	g++ UI.cpp -c
 make clean:
-	rm *.o output.wav audio
+	rm *.o output.wav
