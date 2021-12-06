@@ -11,8 +11,7 @@ int main(){
     UI menu;
     do{
         menu.startMenu();
-        if(menu.getRunFlag()==1){
-            menu.checkForFile();
+        if(menu.getRunFlag()==1&&menu.checkForFile()){
             Wav sound(menu.getFileName());
             menu.processorMenu();
             
@@ -68,7 +67,6 @@ int main(){
                         break;
             }
         }
-        std::system("clear");
     }while(menu.getRunFlag()==1);
     return(0);
 

@@ -35,8 +35,12 @@ void UI::processorMenu(){
 bool UI::checkForFile(){
     std::ifstream file(fileName,std::ios::binary | std::ios::in); 
     if(!file.is_open()){
-        std::cout<<"File not found";
-        std::system("clear");
+        std::cout<<"File not found"<<std::endl;
+        return(false);
+    }
+
+    if(fileName.substr(fileName.find_last_of(".") + 1) != "wav") {
+        std::cout<<"File is not a wav file"<<std::endl;
         return(false);
     }
     return(true);
