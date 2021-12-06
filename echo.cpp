@@ -31,5 +31,4 @@ void Echo::process(int delay, float gain){
     dataForProcessing=output;
     
     Normalization::process();
-    std::cout<<std::fixed;
 }
