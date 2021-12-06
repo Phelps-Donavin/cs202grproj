@@ -1,0 +1,257 @@
+\hypertarget{classNormalization}{}\doxysection{Normalization Class Reference}
+\label{classNormalization}\index{Normalization@{Normalization}}
+
+
+Inheritance diagram for Normalization\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=178pt]{d2/d5e/classNormalization__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Normalization\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=166pt]{de/d74/classNormalization__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classNormalization_a724a3e8f4a639c5a387e16cfc1283312}{Normalization}} ()=default
+\begin{DoxyCompactList}\small\item\em 
+\begin{DoxyItemize}
+\item Construct a new \mbox{\hyperlink{classNormalization}{Normalization}} object 
+\end{DoxyItemize}\end{DoxyCompactList}\item 
+\mbox{\hyperlink{classNormalization_a8f54ff0c4ec94d450ad4377efd25760d}{Normalization}} (unsigned char $\ast$p\+Buffer\+Array, int bit\+Type, int data\+Bytes)
+\begin{DoxyCompactList}\small\item\em Overloaded constructor of the \mbox{\hyperlink{classNormalization}{Normalization}} class constructor, copies data data froma buffer to a vector char$\ast$, sets class Bitflag attribute. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classNormalization_a7208b6a5187c5972dcca115bf57e8e7e}{Normalization}} (short $\ast$p\+Buffer\+Array, int bit\+Type, int data\+Bytes)
+\begin{DoxyCompactList}\small\item\em Overloaded constrcutor of the Normlization class constructor, copies data from a buffer to a vecotr of short int, sets class Bitflag attribute. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classNormalization_a7666aa086ded5e86b4b5c330e49bab26}{process}} ()
+\begin{DoxyCompactList}\small\item\em Normalizes audio. \end{DoxyCompactList}\item 
+std\+::vector$<$ float $>$ \mbox{\hyperlink{classNormalization_a6be079cc62454d12ca9aa4e6e786bf1f}{get\+Data}} ()
+\begin{DoxyCompactList}\small\item\em 
+\begin{DoxyItemize}
+\item Get the data\+For\+Processing 
+\end{DoxyItemize}\end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classNormalization_a994210880ce74282ee18c54c6c397478}{set\+Data\+For\+Processing}} (unsigned char $\ast$p\+Buffer\+Array, int bit\+Type, int data\+Bytes)
+\begin{DoxyCompactList}\small\item\em Sets data\+For\+Processing, overloaded for 8bit or 16bit data. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classNormalization_a5800b6b6cdc66ffe90cf975aa6609606}{set\+Data\+For\+Processing}} (short $\ast$p\+Buffer\+Array, int bit\+Type, int data\+Bytes)
+\begin{DoxyCompactList}\small\item\em Sets data\+For\+Processing, overloaded for 8bit or 16bit data. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classNormalization_a965f7fe620ef7e6a8ea448fd0665d020}{bit\+Flag}}
+\begin{DoxyCompactList}\small\item\em 
+\begin{DoxyItemize}
+\item used to determine if data in data\+For\+Processing is 8 or 16 bit 
+\end{DoxyItemize}\end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classNormalization_a4fbba1d10c997eee2a4855f74bb01a62}{num\+Samples}}
+\begin{DoxyCompactList}\small\item\em 
+\begin{DoxyItemize}
+\item the number of samples 
+\end{DoxyItemize}\end{DoxyCompactList}\item 
+std\+::vector$<$ float $>$ \mbox{\hyperlink{classNormalization_a541d45f69e19d47aff8d174b953292ea}{data\+For\+Processing}}
+\begin{DoxyCompactList}\small\item\em 
+\begin{DoxyItemize}
+\item raw sound data to be processed 
+\end{DoxyItemize}\end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{classNormalization_a9ed4fadef2a36633c79dc0ca88ce54be}{max\+Value}} =-\/1
+\begin{DoxyCompactList}\small\item\em 
+\begin{DoxyItemize}
+\item max value of the samples in data\+For\+Processing 
+\end{DoxyItemize}\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classNormalization_a724a3e8f4a639c5a387e16cfc1283312}\label{classNormalization_a724a3e8f4a639c5a387e16cfc1283312}} 
+\index{Normalization@{Normalization}!Normalization@{Normalization}}
+\index{Normalization@{Normalization}!Normalization@{Normalization}}
+\doxysubsubsection{\texorpdfstring{Normalization()}{Normalization()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Normalization\+::\+Normalization (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+
+\begin{DoxyItemize}
+\item Construct a new \mbox{\hyperlink{classNormalization}{Normalization}} object 
+\end{DoxyItemize}
+
+\mbox{\Hypertarget{classNormalization_a8f54ff0c4ec94d450ad4377efd25760d}\label{classNormalization_a8f54ff0c4ec94d450ad4377efd25760d}} 
+\index{Normalization@{Normalization}!Normalization@{Normalization}}
+\index{Normalization@{Normalization}!Normalization@{Normalization}}
+\doxysubsubsection{\texorpdfstring{Normalization()}{Normalization()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Normalization\+::\+Normalization (\begin{DoxyParamCaption}\item[{unsigned char $\ast$}]{p\+Buffer\+Array,  }\item[{int}]{bit\+Type,  }\item[{int}]{data\+Bytes }\end{DoxyParamCaption})}
+
+
+
+Overloaded constructor of the \mbox{\hyperlink{classNormalization}{Normalization}} class constructor, copies data data froma buffer to a vector char$\ast$, sets class Bitflag attribute. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+Buffer\+Array} & -\/ Pointer to a buffer holding raw 8bit sound data \\
+\hline
+{\em bit\+Type} & -\/ Holds either 8 or 16, representing sound data bit Depth \\
+\hline
+{\em data\+Bytes} & -\/ total length of raw sound data \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classNormalization_a7208b6a5187c5972dcca115bf57e8e7e}\label{classNormalization_a7208b6a5187c5972dcca115bf57e8e7e}} 
+\index{Normalization@{Normalization}!Normalization@{Normalization}}
+\index{Normalization@{Normalization}!Normalization@{Normalization}}
+\doxysubsubsection{\texorpdfstring{Normalization()}{Normalization()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Normalization\+::\+Normalization (\begin{DoxyParamCaption}\item[{short $\ast$}]{p\+Buffer\+Array,  }\item[{int}]{bit\+Type,  }\item[{int}]{data\+Bytes }\end{DoxyParamCaption})}
+
+
+
+Overloaded constrcutor of the Normlization class constructor, copies data from a buffer to a vecotr of short int, sets class Bitflag attribute. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+Buffer\+Array} & -\/Pointer to a buffer holding raw 16 bit sound data \\
+\hline
+{\em bit\+Type} & -\/ Holds either 8 or 16, representing sound data bit Depth \\
+\hline
+{\em data\+Bytes} & -\/ total length of raw sound data \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classNormalization_a6be079cc62454d12ca9aa4e6e786bf1f}\label{classNormalization_a6be079cc62454d12ca9aa4e6e786bf1f}} 
+\index{Normalization@{Normalization}!getData@{getData}}
+\index{getData@{getData}!Normalization@{Normalization}}
+\doxysubsubsection{\texorpdfstring{getData()}{getData()}}
+{\footnotesize\ttfamily std\+::vector$<$ float $>$ Normalization\+::get\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+
+\begin{DoxyItemize}
+\item Get the data\+For\+Processing 
+\end{DoxyItemize}
+
+\begin{DoxyReturn}{Returns}
+std\+::vector$<$float$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classNormalization_a7666aa086ded5e86b4b5c330e49bab26}\label{classNormalization_a7666aa086ded5e86b4b5c330e49bab26}} 
+\index{Normalization@{Normalization}!process@{process}}
+\index{process@{process}!Normalization@{Normalization}}
+\doxysubsubsection{\texorpdfstring{process()}{process()}}
+{\footnotesize\ttfamily void Normalization\+::process (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Normalizes audio. 
+
+
+
+Implements \mbox{\hyperlink{classprocessor_aa7837ebcaa00a6e1f9d6561c770d28c4}{processor}}.
+
+\mbox{\Hypertarget{classNormalization_a5800b6b6cdc66ffe90cf975aa6609606}\label{classNormalization_a5800b6b6cdc66ffe90cf975aa6609606}} 
+\index{Normalization@{Normalization}!setDataForProcessing@{setDataForProcessing}}
+\index{setDataForProcessing@{setDataForProcessing}!Normalization@{Normalization}}
+\doxysubsubsection{\texorpdfstring{setDataForProcessing()}{setDataForProcessing()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Normalization\+::set\+Data\+For\+Processing (\begin{DoxyParamCaption}\item[{short $\ast$}]{p\+Buffer\+Array,  }\item[{int}]{bit\+Type,  }\item[{int}]{data\+Bytes }\end{DoxyParamCaption})}
+
+
+
+Sets data\+For\+Processing, overloaded for 8bit or 16bit data. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+Buffer\+Array} & -\/ Pointer to a buffer holding raw 16bit sound data \\
+\hline
+{\em bit\+Type} & -\/ Holds either 8 or 16, representing sound data bit Depth \\
+\hline
+{\em data\+Bytes} & -\/ total length of raw sound data \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classNormalization_a994210880ce74282ee18c54c6c397478}\label{classNormalization_a994210880ce74282ee18c54c6c397478}} 
+\index{Normalization@{Normalization}!setDataForProcessing@{setDataForProcessing}}
+\index{setDataForProcessing@{setDataForProcessing}!Normalization@{Normalization}}
+\doxysubsubsection{\texorpdfstring{setDataForProcessing()}{setDataForProcessing()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Normalization\+::set\+Data\+For\+Processing (\begin{DoxyParamCaption}\item[{unsigned char $\ast$}]{p\+Buffer\+Array,  }\item[{int}]{bit\+Type,  }\item[{int}]{data\+Bytes }\end{DoxyParamCaption})}
+
+
+
+Sets data\+For\+Processing, overloaded for 8bit or 16bit data. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+Buffer\+Array} & -\/ Pointer to a buffer holding raw 8bit sound data \\
+\hline
+{\em bit\+Type} & -\/ Holds either 8 or 16, representing sound data bit Depth \\
+\hline
+{\em data\+Bytes} & -\/ total length of raw sound data \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classNormalization_a965f7fe620ef7e6a8ea448fd0665d020}\label{classNormalization_a965f7fe620ef7e6a8ea448fd0665d020}} 
+\index{Normalization@{Normalization}!bitFlag@{bitFlag}}
+\index{bitFlag@{bitFlag}!Normalization@{Normalization}}
+\doxysubsubsection{\texorpdfstring{bitFlag}{bitFlag}}
+{\footnotesize\ttfamily int Normalization\+::bit\+Flag\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+
+\begin{DoxyItemize}
+\item used to determine if data in data\+For\+Processing is 8 or 16 bit 
+\end{DoxyItemize}
+
+\mbox{\Hypertarget{classNormalization_a541d45f69e19d47aff8d174b953292ea}\label{classNormalization_a541d45f69e19d47aff8d174b953292ea}} 
+\index{Normalization@{Normalization}!dataForProcessing@{dataForProcessing}}
+\index{dataForProcessing@{dataForProcessing}!Normalization@{Normalization}}
+\doxysubsubsection{\texorpdfstring{dataForProcessing}{dataForProcessing}}
+{\footnotesize\ttfamily std\+::vector$<$float$>$ Normalization\+::data\+For\+Processing\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+
+\begin{DoxyItemize}
+\item raw sound data to be processed 
+\end{DoxyItemize}
+
+\mbox{\Hypertarget{classNormalization_a9ed4fadef2a36633c79dc0ca88ce54be}\label{classNormalization_a9ed4fadef2a36633c79dc0ca88ce54be}} 
+\index{Normalization@{Normalization}!maxValue@{maxValue}}
+\index{maxValue@{maxValue}!Normalization@{Normalization}}
+\doxysubsubsection{\texorpdfstring{maxValue}{maxValue}}
+{\footnotesize\ttfamily float Normalization\+::max\+Value =-\/1\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+
+\begin{DoxyItemize}
+\item max value of the samples in data\+For\+Processing 
+\end{DoxyItemize}
+
+\mbox{\Hypertarget{classNormalization_a4fbba1d10c997eee2a4855f74bb01a62}\label{classNormalization_a4fbba1d10c997eee2a4855f74bb01a62}} 
+\index{Normalization@{Normalization}!numSamples@{numSamples}}
+\index{numSamples@{numSamples}!Normalization@{Normalization}}
+\doxysubsubsection{\texorpdfstring{numSamples}{numSamples}}
+{\footnotesize\ttfamily int Normalization\+::num\+Samples\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+
+\begin{DoxyItemize}
+\item the number of samples 
+\end{DoxyItemize}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+normalization.\+h\item 
+normalization.\+cpp\end{DoxyCompactItemize}

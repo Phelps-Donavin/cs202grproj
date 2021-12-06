@@ -1,0 +1,215 @@
+\hypertarget{classUI}{}\doxysection{UI Class Reference}
+\label{classUI}\index{UI@{UI}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classUI_a9d38158c085ea99ff577fed4f2db934e}{print\+Menu\+Header}} ()
+\begin{DoxyCompactList}\small\item\em prints the start menu header \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classUI_a69fb08ba06ffcb12efb4f2d97e7bcbc5}{start\+Menu}} ()
+\begin{DoxyCompactList}\small\item\em displays the start menu and handles user input \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classUI_a579d590964f53a393fe2b7982434af34}{processor\+Menu}} ()
+\begin{DoxyCompactList}\small\item\em prints out the processor menu and handles user input \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classUI_a2404577bdaa53e15511a7ed7f388e322}{check\+For\+File}} ()
+\begin{DoxyCompactList}\small\item\em checks to see if the file is open and is a wav file \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classUI_ad17bca24072f3b125c8288c393e495d8}{set\+File\+Name}} (std\+::string name)
+\begin{DoxyCompactList}\small\item\em Sets file\+Name. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classUI_a15f43350dfed4e80f30fbd7ce281681b}{get\+File\+Name}} ()
+\begin{DoxyCompactList}\small\item\em Gets the file\+Name. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classUI_a3606d9286a715c4462dc76eb9e957ca2}{set\+Output\+Filename}} (std\+::string name)
+\begin{DoxyCompactList}\small\item\em Set the Output Filename object. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classUI_a81dad987b83faf3300367de99d66c422}{get\+Output\+Filename}} ()
+\begin{DoxyCompactList}\small\item\em Gets output\+File\+Name. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classUI_a00efcf477d9388f5adbb7178848a93d8}{get\+Run\+Flag}} ()
+\begin{DoxyCompactList}\small\item\em Gets run\+Flag. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classUI_aa48567d74a6afe64d3bad4283d4a7f33}{getuserchoice}} ()
+\begin{DoxyCompactList}\small\item\em gets users choice for the processor \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classUI_a6ac1b1109a420d2ab570a9d24f9a9020}{run\+Flag}}
+\begin{DoxyCompactList}\small\item\em sets a runflag to tell if user wants to exit or start \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classUI_aa25e6ee97337c5f4bd554216cfe3eddb}{file\+Name}}
+\begin{DoxyCompactList}\small\item\em input filename \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classUI_afe72ce634973d5a386f2fc29a53d9f7d}{output\+File\+Name}}
+\begin{DoxyCompactList}\small\item\em output filename \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classUI_adbd327199d500b616ab1197c41546463}{user\+Choice}}
+\begin{DoxyCompactList}\small\item\em user\textquotesingle{}s processor choice \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classUI_a2404577bdaa53e15511a7ed7f388e322}\label{classUI_a2404577bdaa53e15511a7ed7f388e322}} 
+\index{UI@{UI}!checkForFile@{checkForFile}}
+\index{checkForFile@{checkForFile}!UI@{UI}}
+\doxysubsubsection{\texorpdfstring{checkForFile()}{checkForFile()}}
+{\footnotesize\ttfamily bool U\+I\+::check\+For\+File (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+checks to see if the file is open and is a wav file 
+
+\begin{DoxyReturn}{Returns}
+true 
+
+false 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classUI_a15f43350dfed4e80f30fbd7ce281681b}\label{classUI_a15f43350dfed4e80f30fbd7ce281681b}} 
+\index{UI@{UI}!getFileName@{getFileName}}
+\index{getFileName@{getFileName}!UI@{UI}}
+\doxysubsubsection{\texorpdfstring{getFileName()}{getFileName()}}
+{\footnotesize\ttfamily std\+::string U\+I\+::get\+File\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets the file\+Name. 
+
+\begin{DoxyReturn}{Returns}
+std\+::string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classUI_a81dad987b83faf3300367de99d66c422}\label{classUI_a81dad987b83faf3300367de99d66c422}} 
+\index{UI@{UI}!getOutputFilename@{getOutputFilename}}
+\index{getOutputFilename@{getOutputFilename}!UI@{UI}}
+\doxysubsubsection{\texorpdfstring{getOutputFilename()}{getOutputFilename()}}
+{\footnotesize\ttfamily std\+::string U\+I\+::get\+Output\+Filename (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets output\+File\+Name. 
+
+\begin{DoxyReturn}{Returns}
+std\+::string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classUI_a00efcf477d9388f5adbb7178848a93d8}\label{classUI_a00efcf477d9388f5adbb7178848a93d8}} 
+\index{UI@{UI}!getRunFlag@{getRunFlag}}
+\index{getRunFlag@{getRunFlag}!UI@{UI}}
+\doxysubsubsection{\texorpdfstring{getRunFlag()}{getRunFlag()}}
+{\footnotesize\ttfamily int U\+I\+::get\+Run\+Flag (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets run\+Flag. 
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classUI_aa48567d74a6afe64d3bad4283d4a7f33}\label{classUI_aa48567d74a6afe64d3bad4283d4a7f33}} 
+\index{UI@{UI}!getuserchoice@{getuserchoice}}
+\index{getuserchoice@{getuserchoice}!UI@{UI}}
+\doxysubsubsection{\texorpdfstring{getuserchoice()}{getuserchoice()}}
+{\footnotesize\ttfamily int U\+I\+::getuserchoice (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+gets users choice for the processor 
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classUI_a9d38158c085ea99ff577fed4f2db934e}\label{classUI_a9d38158c085ea99ff577fed4f2db934e}} 
+\index{UI@{UI}!printMenuHeader@{printMenuHeader}}
+\index{printMenuHeader@{printMenuHeader}!UI@{UI}}
+\doxysubsubsection{\texorpdfstring{printMenuHeader()}{printMenuHeader()}}
+{\footnotesize\ttfamily void U\+I\+::print\+Menu\+Header (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+prints the start menu header 
+
+\mbox{\Hypertarget{classUI_a579d590964f53a393fe2b7982434af34}\label{classUI_a579d590964f53a393fe2b7982434af34}} 
+\index{UI@{UI}!processorMenu@{processorMenu}}
+\index{processorMenu@{processorMenu}!UI@{UI}}
+\doxysubsubsection{\texorpdfstring{processorMenu()}{processorMenu()}}
+{\footnotesize\ttfamily void U\+I\+::processor\+Menu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+prints out the processor menu and handles user input 
+
+\mbox{\Hypertarget{classUI_ad17bca24072f3b125c8288c393e495d8}\label{classUI_ad17bca24072f3b125c8288c393e495d8}} 
+\index{UI@{UI}!setFileName@{setFileName}}
+\index{setFileName@{setFileName}!UI@{UI}}
+\doxysubsubsection{\texorpdfstring{setFileName()}{setFileName()}}
+{\footnotesize\ttfamily void U\+I\+::set\+File\+Name (\begin{DoxyParamCaption}\item[{std\+::string}]{name }\end{DoxyParamCaption})}
+
+
+
+Sets file\+Name. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classUI_a3606d9286a715c4462dc76eb9e957ca2}\label{classUI_a3606d9286a715c4462dc76eb9e957ca2}} 
+\index{UI@{UI}!setOutputFilename@{setOutputFilename}}
+\index{setOutputFilename@{setOutputFilename}!UI@{UI}}
+\doxysubsubsection{\texorpdfstring{setOutputFilename()}{setOutputFilename()}}
+{\footnotesize\ttfamily void U\+I\+::set\+Output\+Filename (\begin{DoxyParamCaption}\item[{std\+::string}]{name }\end{DoxyParamCaption})}
+
+
+
+Set the Output Filename object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & the name you want to set output\+File \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classUI_a69fb08ba06ffcb12efb4f2d97e7bcbc5}\label{classUI_a69fb08ba06ffcb12efb4f2d97e7bcbc5}} 
+\index{UI@{UI}!startMenu@{startMenu}}
+\index{startMenu@{startMenu}!UI@{UI}}
+\doxysubsubsection{\texorpdfstring{startMenu()}{startMenu()}}
+{\footnotesize\ttfamily void U\+I\+::start\+Menu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+displays the start menu and handles user input 
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classUI_aa25e6ee97337c5f4bd554216cfe3eddb}\label{classUI_aa25e6ee97337c5f4bd554216cfe3eddb}} 
+\index{UI@{UI}!fileName@{fileName}}
+\index{fileName@{fileName}!UI@{UI}}
+\doxysubsubsection{\texorpdfstring{fileName}{fileName}}
+{\footnotesize\ttfamily std\+::string U\+I\+::file\+Name\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+input filename 
+
+\mbox{\Hypertarget{classUI_afe72ce634973d5a386f2fc29a53d9f7d}\label{classUI_afe72ce634973d5a386f2fc29a53d9f7d}} 
+\index{UI@{UI}!outputFileName@{outputFileName}}
+\index{outputFileName@{outputFileName}!UI@{UI}}
+\doxysubsubsection{\texorpdfstring{outputFileName}{outputFileName}}
+{\footnotesize\ttfamily std\+::string U\+I\+::output\+File\+Name\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+output filename 
+
+\mbox{\Hypertarget{classUI_a6ac1b1109a420d2ab570a9d24f9a9020}\label{classUI_a6ac1b1109a420d2ab570a9d24f9a9020}} 
+\index{UI@{UI}!runFlag@{runFlag}}
+\index{runFlag@{runFlag}!UI@{UI}}
+\doxysubsubsection{\texorpdfstring{runFlag}{runFlag}}
+{\footnotesize\ttfamily int U\+I\+::run\+Flag\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+sets a runflag to tell if user wants to exit or start 
+
+\mbox{\Hypertarget{classUI_adbd327199d500b616ab1197c41546463}\label{classUI_adbd327199d500b616ab1197c41546463}} 
+\index{UI@{UI}!userChoice@{userChoice}}
+\index{userChoice@{userChoice}!UI@{UI}}
+\doxysubsubsection{\texorpdfstring{userChoice}{userChoice}}
+{\footnotesize\ttfamily int U\+I\+::user\+Choice\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+user\textquotesingle{}s processor choice 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+U\+I.\+h\item 
+U\+I.\+cpp\end{DoxyCompactItemize}

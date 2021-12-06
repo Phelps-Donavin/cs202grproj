@@ -1,0 +1,99 @@
+\hypertarget{classEcho}{}\doxysection{Echo Class Reference}
+\label{classEcho}\index{Echo@{Echo}}
+
+
+Inheritance diagram for Echo\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=166pt]{d1/dd3/classEcho__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Echo\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=166pt]{da/d44/classEcho__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classEcho_aebe5c647f0309c4b10e22de18b1aa473}{Echo}} (unsigned char $\ast$p\+Buffer\+Array, int bit\+Type, int data\+Bytes)
+\begin{DoxyCompactList}\small\item\em Overloaded Constructor the \mbox{\hyperlink{classEcho}{Echo}} Class, for 8bit data, copies data from an array of char$\ast$ to a vector of floats. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classEcho_a4fc0f2c79427fe3fea68b6b416fb2580}{Echo}} (short $\ast$p\+Buffer\+Array, int bit\+Type, int data\+Bytes)
+\begin{DoxyCompactList}\small\item\em Overloaded Constructor of the \mbox{\hyperlink{classEcho}{Echo}} Class, for 16bit data, copies data from an array of short int to a vector of floats. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classEcho_abec13d7e8c633fb31df511e536acb9ed}{process}} (int delay, float gain)
+\begin{DoxyCompactList}\small\item\em Echoes the audio, the echo is started at when the number of samples greater than delay, and thhen gained by the gain param (Note, to find the nnumber of seconds to delay the audio multiply the sample rate by the number of seconds you want it to be delayed.) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classEcho_aebe5c647f0309c4b10e22de18b1aa473}\label{classEcho_aebe5c647f0309c4b10e22de18b1aa473}} 
+\index{Echo@{Echo}!Echo@{Echo}}
+\index{Echo@{Echo}!Echo@{Echo}}
+\doxysubsubsection{\texorpdfstring{Echo()}{Echo()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Echo\+::\+Echo (\begin{DoxyParamCaption}\item[{unsigned char $\ast$}]{p\+Buffer\+Array,  }\item[{int}]{bit\+Type,  }\item[{int}]{data\+Bytes }\end{DoxyParamCaption})}
+
+
+
+Overloaded Constructor the \mbox{\hyperlink{classEcho}{Echo}} Class, for 8bit data, copies data from an array of char$\ast$ to a vector of floats. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+Buffer\+Array} & pointer to a buffer holding 8bit raw sound data \\
+\hline
+{\em bit\+Type} & either 8 or 16, holds the bitdepth of the file \\
+\hline
+{\em data\+Bytes} & the toltal length of the buffer held by p\+Buffer\+Array \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classEcho_a4fc0f2c79427fe3fea68b6b416fb2580}\label{classEcho_a4fc0f2c79427fe3fea68b6b416fb2580}} 
+\index{Echo@{Echo}!Echo@{Echo}}
+\index{Echo@{Echo}!Echo@{Echo}}
+\doxysubsubsection{\texorpdfstring{Echo()}{Echo()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Echo\+::\+Echo (\begin{DoxyParamCaption}\item[{short $\ast$}]{p\+Buffer\+Array,  }\item[{int}]{bit\+Type,  }\item[{int}]{data\+Bytes }\end{DoxyParamCaption})}
+
+
+
+Overloaded Constructor of the \mbox{\hyperlink{classEcho}{Echo}} Class, for 16bit data, copies data from an array of short int to a vector of floats. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+Buffer\+Array} & pointer to a buffer holding 16bit raw sound data \\
+\hline
+{\em bit\+Type} & either 8 or 16, holds the bitdepth of the file \\
+\hline
+{\em data\+Bytes} & the toltal length of the buffer held by p\+Buffer\+Array \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classEcho_abec13d7e8c633fb31df511e536acb9ed}\label{classEcho_abec13d7e8c633fb31df511e536acb9ed}} 
+\index{Echo@{Echo}!process@{process}}
+\index{process@{process}!Echo@{Echo}}
+\doxysubsubsection{\texorpdfstring{process()}{process()}}
+{\footnotesize\ttfamily void Echo\+::process (\begin{DoxyParamCaption}\item[{int}]{delay,  }\item[{float}]{gain }\end{DoxyParamCaption})}
+
+
+
+Echoes the audio, the echo is started at when the number of samples greater than delay, and thhen gained by the gain param (Note, to find the nnumber of seconds to delay the audio multiply the sample rate by the number of seconds you want it to be delayed.) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em delay} & The number of samples to delay the audio \\
+\hline
+{\em gain} & The factor to gain the echoed audio by \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+echo.\+h\item 
+echo.\+cpp\end{DoxyCompactItemize}

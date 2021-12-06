@@ -1,0 +1,97 @@
+\hypertarget{classGain}{}\doxysection{Gain Class Reference}
+\label{classGain}\index{Gain@{Gain}}
+
+
+Inheritance diagram for Gain\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=166pt]{dd/da7/classGain__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Gain\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=166pt]{d0/d6d/classGain__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classGain_a3c6054ecbe582f174a31690eca3a5f5c}{Gain}} (unsigned char $\ast$p\+Buffer\+Array, int bit\+Type, int data\+Bytes)
+\begin{DoxyCompactList}\small\item\em Overloaded Constructor the gain class, for 8bit data. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classGain_a7d62a420ca3f8941d4d49dccd188fb0d}{Gain}} (short $\ast$p\+Buffer\+Array, int bit\+Type, int data\+Bytes)
+\begin{DoxyCompactList}\small\item\em Overloaded Constructor of the gain class, for 16bit data. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classGain_a217d43247ce9d027c51df379daf66274}{process}} (int gainfactor)
+\begin{DoxyCompactList}\small\item\em Increased all samples by gainfactor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classGain_a3c6054ecbe582f174a31690eca3a5f5c}\label{classGain_a3c6054ecbe582f174a31690eca3a5f5c}} 
+\index{Gain@{Gain}!Gain@{Gain}}
+\index{Gain@{Gain}!Gain@{Gain}}
+\doxysubsubsection{\texorpdfstring{Gain()}{Gain()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Gain\+::\+Gain (\begin{DoxyParamCaption}\item[{unsigned char $\ast$}]{p\+Buffer\+Array,  }\item[{int}]{bit\+Type,  }\item[{int}]{data\+Bytes }\end{DoxyParamCaption})}
+
+
+
+Overloaded Constructor the gain class, for 8bit data. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+Buffer\+Array} & pointer to 8 bit buffer holding raw sound data \\
+\hline
+{\em bit\+Type} & contains 8 or 16, dependng on the file type \\
+\hline
+{\em data\+Bytes} & contains the length of the raw sound data pointer to in p\+Buffer\+Array \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classGain_a7d62a420ca3f8941d4d49dccd188fb0d}\label{classGain_a7d62a420ca3f8941d4d49dccd188fb0d}} 
+\index{Gain@{Gain}!Gain@{Gain}}
+\index{Gain@{Gain}!Gain@{Gain}}
+\doxysubsubsection{\texorpdfstring{Gain()}{Gain()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Gain\+::\+Gain (\begin{DoxyParamCaption}\item[{short $\ast$}]{p\+Buffer\+Array,  }\item[{int}]{bit\+Type,  }\item[{int}]{data\+Bytes }\end{DoxyParamCaption})}
+
+
+
+Overloaded Constructor of the gain class, for 16bit data. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+Buffer\+Array} & pointer to 16 bit buffer holding raw sound data \\
+\hline
+{\em bit\+Type} & contains 8 or 16, dependng on the file type \\
+\hline
+{\em data\+Bytes} & contains the length of the raw sound data pointer to in p\+Buffer\+Array \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classGain_a217d43247ce9d027c51df379daf66274}\label{classGain_a217d43247ce9d027c51df379daf66274}} 
+\index{Gain@{Gain}!process@{process}}
+\index{process@{process}!Gain@{Gain}}
+\doxysubsubsection{\texorpdfstring{process()}{process()}}
+{\footnotesize\ttfamily void Gain\+::process (\begin{DoxyParamCaption}\item[{int}]{gainfactor }\end{DoxyParamCaption})}
+
+
+
+Increased all samples by gainfactor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em gainfactor} & The factor that all samples are multiplied by \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+gain.\+h\item 
+gain.\+cpp\end{DoxyCompactItemize}

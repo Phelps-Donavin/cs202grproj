@@ -1,0 +1,253 @@
+\hypertarget{classWav}{}\doxysection{Wav Class Reference}
+\label{classWav}\index{Wav@{Wav}}
+
+
+Collaboration diagram for Wav\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=183pt]{db/dac/classWav__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classWav_a23e1700f87bc1b794819be1f819b7272}{Wav}} ()=default
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classWav}{Wav}} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classWav_a2fee69ab4985c3a3a2a6688a758830e4}{Wav}} (std\+::string filename)
+\begin{DoxyCompactList}\small\item\em Overloaded Constructor aof the wav class, takes in a file\+Name to load a file. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classWav_a4d3a96a00149277de8280d6008a1ba4d}{read}} (const std\+::string file\+Name)
+\begin{DoxyCompactList}\small\item\em reads in a wav file \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classWav_a4102267455349517b9d662cb163de763}{save}} (std\+::vector$<$ float $>$ data, std\+::string Filename)
+\begin{DoxyCompactList}\small\item\em saves the wav header and sound data to a file \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classWav_abe9ad7fffa63c476065c42b73ec157fb}{display\+Meta\+Data}} (std\+::string filename)
+\begin{DoxyCompactList}\small\item\em displays file metadata \end{DoxyCompactList}\item 
+unsigned char $\ast$ \mbox{\hyperlink{classWav_a40a9a1214e164be64dd5da8782c2b99e}{get\+Eight\+Bit\+Buffer}} () const
+\begin{DoxyCompactList}\small\item\em Get the pointer to Eight Bit Buffer object. \end{DoxyCompactList}\item 
+short $\ast$ \mbox{\hyperlink{classWav_a6bf6509826fe344d3b4d789ad8aa7446}{get\+Sixteen\+Bit\+Bit\+Buffer}} () const
+\begin{DoxyCompactList}\small\item\em Get pointer to the Sixteen Bit Bit Buffer object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structwav__header}{wav\+\_\+header}} \mbox{\hyperlink{classWav_aaa8d84c13c358e0b1390144c21b75645}{getwave\+Header}} ()
+\begin{DoxyCompactList}\small\item\em Get the Wave Header object. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classWav_afbd5588a3621503ee028fbec055fd075}{get\+Bit\+Depth}} ()
+\begin{DoxyCompactList}\small\item\em Get the Bit Depth object. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classWav_ab8070896649a7e5c5134b88bf9b0c424}{get\+Data\+Bytes}} ()
+\begin{DoxyCompactList}\small\item\em Get the Data Bytes object. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classWav_afba102f510ef64f29a29616ebca6be9c}{get\+Num\+Samples}} ()
+\begin{DoxyCompactList}\small\item\em Get the number of samples. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classWav_a1510b246ba121b103a60b8e7839af25f}{$\sim$\+Wav}} ()
+\begin{DoxyCompactList}\small\item\em Destroy the \mbox{\hyperlink{classWav}{Wav}} object, in particular the dynamically allocated pointers. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structwav__header}{wav\+\_\+header}} \mbox{\hyperlink{classWav_ab9465cd3b99f1337fa3a77a639dcd9f3}{wave\+Header}}
+\begin{DoxyCompactList}\small\item\em the header of the wave file \end{DoxyCompactList}\item 
+unsigned char $\ast$ \mbox{\hyperlink{classWav_a2aa8b0e96ffcd5294a93fef014e5dd87}{eight\+Bit\+Buffer}}
+\begin{DoxyCompactList}\small\item\em if data is 8bit, it is stored in this buffer \end{DoxyCompactList}\item 
+short $\ast$ \mbox{\hyperlink{classWav_adea873b2991101427c6ff1a59e6eff7b}{sixteen\+Bit\+Buffer}}
+\begin{DoxyCompactList}\small\item\em if the data is 16bit, it is sotred in this buffer \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classWav_a23e1700f87bc1b794819be1f819b7272}\label{classWav_a23e1700f87bc1b794819be1f819b7272}} 
+\index{Wav@{Wav}!Wav@{Wav}}
+\index{Wav@{Wav}!Wav@{Wav}}
+\doxysubsubsection{\texorpdfstring{Wav()}{Wav()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Wav\+::\+Wav (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+Construct a new \mbox{\hyperlink{classWav}{Wav}} object. 
+
+\mbox{\Hypertarget{classWav_a2fee69ab4985c3a3a2a6688a758830e4}\label{classWav_a2fee69ab4985c3a3a2a6688a758830e4}} 
+\index{Wav@{Wav}!Wav@{Wav}}
+\index{Wav@{Wav}!Wav@{Wav}}
+\doxysubsubsection{\texorpdfstring{Wav()}{Wav()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Wav\+::\+Wav (\begin{DoxyParamCaption}\item[{std\+::string}]{filename }\end{DoxyParamCaption})}
+
+
+
+Overloaded Constructor aof the wav class, takes in a file\+Name to load a file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classWav_a1510b246ba121b103a60b8e7839af25f}\label{classWav_a1510b246ba121b103a60b8e7839af25f}} 
+\index{Wav@{Wav}!````~Wav@{$\sim$Wav}}
+\index{````~Wav@{$\sim$Wav}!Wav@{Wav}}
+\doxysubsubsection{\texorpdfstring{$\sim$Wav()}{~Wav()}}
+{\footnotesize\ttfamily Wav\+::$\sim$\+Wav (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destroy the \mbox{\hyperlink{classWav}{Wav}} object, in particular the dynamically allocated pointers. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classWav_abe9ad7fffa63c476065c42b73ec157fb}\label{classWav_abe9ad7fffa63c476065c42b73ec157fb}} 
+\index{Wav@{Wav}!displayMetaData@{displayMetaData}}
+\index{displayMetaData@{displayMetaData}!Wav@{Wav}}
+\doxysubsubsection{\texorpdfstring{displayMetaData()}{displayMetaData()}}
+{\footnotesize\ttfamily void Wav\+::display\+Meta\+Data (\begin{DoxyParamCaption}\item[{std\+::string}]{filename }\end{DoxyParamCaption})}
+
+
+
+displays file metadata 
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classWav_afbd5588a3621503ee028fbec055fd075}\label{classWav_afbd5588a3621503ee028fbec055fd075}} 
+\index{Wav@{Wav}!getBitDepth@{getBitDepth}}
+\index{getBitDepth@{getBitDepth}!Wav@{Wav}}
+\doxysubsubsection{\texorpdfstring{getBitDepth()}{getBitDepth()}}
+{\footnotesize\ttfamily int Wav\+::get\+Bit\+Depth (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the Bit Depth object. 
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classWav_ab8070896649a7e5c5134b88bf9b0c424}\label{classWav_ab8070896649a7e5c5134b88bf9b0c424}} 
+\index{Wav@{Wav}!getDataBytes@{getDataBytes}}
+\index{getDataBytes@{getDataBytes}!Wav@{Wav}}
+\doxysubsubsection{\texorpdfstring{getDataBytes()}{getDataBytes()}}
+{\footnotesize\ttfamily int Wav\+::get\+Data\+Bytes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the Data Bytes object. 
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classWav_a40a9a1214e164be64dd5da8782c2b99e}\label{classWav_a40a9a1214e164be64dd5da8782c2b99e}} 
+\index{Wav@{Wav}!getEightBitBuffer@{getEightBitBuffer}}
+\index{getEightBitBuffer@{getEightBitBuffer}!Wav@{Wav}}
+\doxysubsubsection{\texorpdfstring{getEightBitBuffer()}{getEightBitBuffer()}}
+{\footnotesize\ttfamily unsigned char $\ast$ Wav\+::get\+Eight\+Bit\+Buffer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the pointer to Eight Bit Buffer object. 
+
+\begin{DoxyReturn}{Returns}
+unsigned$\ast$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classWav_afba102f510ef64f29a29616ebca6be9c}\label{classWav_afba102f510ef64f29a29616ebca6be9c}} 
+\index{Wav@{Wav}!getNumSamples@{getNumSamples}}
+\index{getNumSamples@{getNumSamples}!Wav@{Wav}}
+\doxysubsubsection{\texorpdfstring{getNumSamples()}{getNumSamples()}}
+{\footnotesize\ttfamily int Wav\+::get\+Num\+Samples (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the number of samples. 
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classWav_a6bf6509826fe344d3b4d789ad8aa7446}\label{classWav_a6bf6509826fe344d3b4d789ad8aa7446}} 
+\index{Wav@{Wav}!getSixteenBitBitBuffer@{getSixteenBitBitBuffer}}
+\index{getSixteenBitBitBuffer@{getSixteenBitBitBuffer}!Wav@{Wav}}
+\doxysubsubsection{\texorpdfstring{getSixteenBitBitBuffer()}{getSixteenBitBitBuffer()}}
+{\footnotesize\ttfamily short $\ast$ Wav\+::get\+Sixteen\+Bit\+Bit\+Buffer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get pointer to the Sixteen Bit Bit Buffer object. 
+
+\begin{DoxyReturn}{Returns}
+short$\ast$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classWav_aaa8d84c13c358e0b1390144c21b75645}\label{classWav_aaa8d84c13c358e0b1390144c21b75645}} 
+\index{Wav@{Wav}!getwaveHeader@{getwaveHeader}}
+\index{getwaveHeader@{getwaveHeader}!Wav@{Wav}}
+\doxysubsubsection{\texorpdfstring{getwaveHeader()}{getwaveHeader()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structwav__header}{wav\+\_\+header}} Wav\+::getwave\+Header (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the Wave Header object. 
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{structwav__header}{wav\+\_\+header}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classWav_a4d3a96a00149277de8280d6008a1ba4d}\label{classWav_a4d3a96a00149277de8280d6008a1ba4d}} 
+\index{Wav@{Wav}!read@{read}}
+\index{read@{read}!Wav@{Wav}}
+\doxysubsubsection{\texorpdfstring{read()}{read()}}
+{\footnotesize\ttfamily void Wav\+::read (\begin{DoxyParamCaption}\item[{const std\+::string}]{file\+Name }\end{DoxyParamCaption})}
+
+
+
+reads in a wav file 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+Name} & name of the file to be read in \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classWav_a4102267455349517b9d662cb163de763}\label{classWav_a4102267455349517b9d662cb163de763}} 
+\index{Wav@{Wav}!save@{save}}
+\index{save@{save}!Wav@{Wav}}
+\doxysubsubsection{\texorpdfstring{save()}{save()}}
+{\footnotesize\ttfamily void Wav\+::save (\begin{DoxyParamCaption}\item[{std\+::vector$<$ float $>$}]{data,  }\item[{std\+::string}]{Filename }\end{DoxyParamCaption})}
+
+
+
+saves the wav header and sound data to a file 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & vector of floats holding the raw sound data \\
+\hline
+{\em Filename} & the name of the file to be written to \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classWav_a2aa8b0e96ffcd5294a93fef014e5dd87}\label{classWav_a2aa8b0e96ffcd5294a93fef014e5dd87}} 
+\index{Wav@{Wav}!eightBitBuffer@{eightBitBuffer}}
+\index{eightBitBuffer@{eightBitBuffer}!Wav@{Wav}}
+\doxysubsubsection{\texorpdfstring{eightBitBuffer}{eightBitBuffer}}
+{\footnotesize\ttfamily unsigned char$\ast$ Wav\+::eight\+Bit\+Buffer\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+if data is 8bit, it is stored in this buffer 
+
+\mbox{\Hypertarget{classWav_adea873b2991101427c6ff1a59e6eff7b}\label{classWav_adea873b2991101427c6ff1a59e6eff7b}} 
+\index{Wav@{Wav}!sixteenBitBuffer@{sixteenBitBuffer}}
+\index{sixteenBitBuffer@{sixteenBitBuffer}!Wav@{Wav}}
+\doxysubsubsection{\texorpdfstring{sixteenBitBuffer}{sixteenBitBuffer}}
+{\footnotesize\ttfamily short$\ast$ Wav\+::sixteen\+Bit\+Buffer\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+if the data is 16bit, it is sotred in this buffer 
+
+\mbox{\Hypertarget{classWav_ab9465cd3b99f1337fa3a77a639dcd9f3}\label{classWav_ab9465cd3b99f1337fa3a77a639dcd9f3}} 
+\index{Wav@{Wav}!waveHeader@{waveHeader}}
+\index{waveHeader@{waveHeader}!Wav@{Wav}}
+\doxysubsubsection{\texorpdfstring{waveHeader}{waveHeader}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structwav__header}{wav\+\_\+header}} Wav\+::wave\+Header\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+the header of the wave file 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Wav.\+h\item 
+wav.\+cpp\end{DoxyCompactItemize}
